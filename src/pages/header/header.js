@@ -40,9 +40,7 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="login__form">
-                    <div className="logo">
-                        <div className="img"></div>
-                        <div className="name">Versel TEst</div>
+                    <div className="img">   
                     </div>
                     <div className="client">
                         <div className="icon">

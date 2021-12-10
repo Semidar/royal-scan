@@ -75,22 +75,16 @@
       background-size: auto auto;
       background-repeat: no-repeat;
       background-position: center;
-      .logo {
-        display: flex;
+      align-items: center;
+      .img {
         margin: 0;
-        align-items: center;
-        .img {
-          height: 80px;
-          width: 80px;
-          background-image: url('../../assets/img/Logo.png');
-          background-size: 100% auto;
-          background-repeat: no-repeat;
-          margin-right: 25px;
-        }
-        .name {
-          font-size: 40px;
-          font-weight: bolder;
-        }
+        height: 250px;
+        width: 250px;
+        background-image: url('../../assets/img/Logo.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        background-position: center;
+        border-radius: 5px;
       }
       .client {
         margin: 0;
@@ -229,6 +223,15 @@
             padding: 10px 0;
             text-align: center;
           }
+        }
+      }
+      .login__form {
+        .img {
+          height: 150px;
+          width: 150px;
+        }
+        .client {
+          margin-top: 20px;
         }
       }
       .shop__navigation {
