@@ -1,0 +1,124 @@
+.footer {
+  background-color: #323941;
+  .footer__conteiner {
+    max-width: 1940px;
+  }
+  .footer__row {
+    color: #fff;
+    margin-bottom: 20px;
+    padding: 20px 170px 0px 170px;
+    display: flex;
+    justify-content: space-between;
+    .footer__title {
+      color: #009eff;
+    }
+    .logo {
+      margin: 0px;
+      display: flex;
+      align-items: center;
+      width: 280px;
+      .img {
+        height: 80px;
+        width: 80px;
+        background-image: url('../../assets/img/Logo.png');
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        margin-right: 25px;
+      }
+      .name {
+        font-size: 40px;
+        font-weight: bolder;
+      }
+    }
+    .second__col {
+      margin: 0px;
+      width: 280px;
+      text-align: left;
+      padding-left: 130px;
+    }
+    .first__col {
+      text-align: center;
+      margin: 0;
+      width: 280px;
+      .footer__items {
+        display: flex;
+        justify-content: center;
+        .footer__link {
+          margin: 0px 5px 0px 5px;
+        }
+      }
+      .footer__item {
+        font-size: 22px;
+      }
+    }
+    .footer__items {
+      list-style: none;
+      margin-top: 15px;
+      padding: 0px;
+    }
+    .footer__link {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  .basement__inner {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+@media (max-width: 1280px) {
+  .footer {
+    font-size: 16px;
+    .footer__row {
+      padding: 20px 170px;
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .footer {
+    font-size: 14px;
+    .footer__row {
+      padding: 20px 25px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    font-size: 14px;
+    .footer__row {
+      flex-direction: column;
+      align-items: center;
+      .logo {
+        margin: auto;
+        margin-bottom: 20px;
+      }
+      .second__col {
+        margin: auto;
+        text-align: center;
+        padding: 0px;
+      }
+      .first__col {
+        margin-bottom: 20px;
+
+        .footer__items {
+          display: flex;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 480px) {
+  .footer__conteiner {
+    margin: 0;
+    .footer__row {
+      padding: 20px 0px 0px 0px;
+      .logo {
+        flex-direction: column;
+        .img {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
