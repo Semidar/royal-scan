@@ -42,7 +42,7 @@ const Header = () => {
                 <div className="login__form">
                     <div className="logo">
                         <div className="img"></div>
-                        <div className="name">K.Shop</div>
+                        <div className="name">Versel TEst</div>
                     </div>
                     <div className="client">
                         <div className="icon">
