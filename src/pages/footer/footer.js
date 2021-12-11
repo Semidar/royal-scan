@@ -15,7 +15,6 @@ const Footer = () => {
                 <div className="footer__row">
                 <div className="logo">
                     <div className="img"></div>
-                    <div className="name">K.Shop</div>
                 </div>
                 <div className="first__col">
                     <div className="footer__title">Социальные сети</div>

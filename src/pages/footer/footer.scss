@@ -18,13 +18,13 @@
       align-items: center;
       width: 280px;
       .img {
+        margin: 0;
         height: 80px;
         width: 80px;
         background-image: url('../../assets/img/Logo.png');
         background-size: 100% auto;
         background-repeat: no-repeat;
         background-position: center;
-        margin-right: 25px;
         border-radius: 5px;
       }
     }
