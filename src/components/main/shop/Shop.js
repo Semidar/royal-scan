@@ -23,7 +23,9 @@ const Shop = () => {
                         {products.map(obj => 
                             <Card name={obj.name} 
                                   price='new'
-                                  img={'image'}/>)}
+                                  img={'image'}
+                            />)
+                        }
                     </div>
                 </div>
             </div>

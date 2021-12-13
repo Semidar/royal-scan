@@ -1,8 +1,12 @@
 import React from 'react'
 import './card.scss'
 
+const addBasket = () => {
+    alert('work');
+}
+
 const Card = (props) => {
-    console.log(props)
+
     return (
         <>
         <div className='product__card'>
@@ -10,7 +14,7 @@ const Card = (props) => {
             <div className='name'>{props.name}</div>
             <div className='price'>{props.price}</div>
             <div className='panel'>
-                <button className='basket'>Basket</button>
+                <button className='basket' onClick={addBasket}>Basket</button>
             </div>
         </div>
         </>
