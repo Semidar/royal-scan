@@ -1,10 +1,12 @@
-import Header from './pages/header/header';
-import Main from './pages/main/main';
-import Footer from './pages/footer/footer';
+import Header from './components/header/Header';
+import Main from './components/main/Main';
+import Footer from './components/footer/Footer';
+import Basket from './components/basket/Basket';
 
 function App() {
   return (
     <div className="App">
+      <Basket/>
       <Header/>
       <Main/>
       <Footer/>

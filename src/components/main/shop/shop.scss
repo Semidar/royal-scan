@@ -1,0 +1,27 @@
+.shop {
+  .shop__wrap {
+    max-width: 1940px;
+    padding: 0 170px;
+    display: flex;
+    justify-content: space-between;
+    .filters {
+      width: 300px;
+      margin: 0;
+      border: 2px solid green;
+    }
+    .gallery {
+      width: 1000px;
+      padding: 50px;
+      margin: 0;
+      border: 2px solid yellow;
+      .title {
+        margin-bottom: 20px;
+      }
+      .product__template {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+    }
+  }
+}

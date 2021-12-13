@@ -20,11 +20,11 @@
           align-items: center;
           list-style: none;
           border-radius: 2px;
-          transition: all 0.5s;
           a {
             text-decoration: none;
             color: #fff;
             padding: 25px 25px;
+            transition: all 0.5s;
           }
         }
         li:hover {

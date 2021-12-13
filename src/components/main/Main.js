@@ -1,9 +1,9 @@
 import React from 'react';
 import { Routes, Route } from "react-router-dom";
-import Shop from './shop/shop';
-import About from './about/about';
-import Delivery from './delivery/delivery';
-import Service  from './service/service';
+import Shop from './shop/Shop';
+import About from './about/About';
+import Delivery from './delivery/Delivery';
+import Service  from './service/Service';
 import './main.scss';
 
 

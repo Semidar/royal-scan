@@ -1,9 +1,9 @@
-import React from 'react';
-import SimpleSlider from '../slider/slider';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons";
-import { faUserCircle } from "@fortawesome/free-regular-svg-icons";
-import { Link } from "react-router-dom";
+import React from 'react'
+import SimpleSlider from '../slider/slider'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faShoppingBasket } from "@fortawesome/free-solid-svg-icons"
+import { faUserCircle } from "@fortawesome/free-regular-svg-icons"
+import { NavLink } from "react-router-dom"
 
 
 import './header.scss';
@@ -16,10 +16,10 @@ const Header = () => {
                 <div className="menu">
                     <div className="menu__wrap">
                         <ul className="nav">
-                            <li className="shop"><Link to='/'>Магазин</Link></li>
-                            <li className="about"><Link to='/About'>О компании</Link></li>
-                            <li className="delivery"><Link to='/Delivery'>Доставка и оплата</Link></li>
-                            <li className="service"><Link to='/Service'>Гарантия и сервис</Link></li>
+                            <li className="shop"><NavLink to='/'>Магазин</NavLink></li>
+                            <li className="about"><NavLink to='/About'>О компании</NavLink></li>
+                            <li className="delivery"><NavLink to='/Delivery'>Доставка и оплата</NavLink></li>
+                            <li className="service"><NavLink to='/Service'>Гарантия и сервис</NavLink></li>
                         </ul>
                         <div className="contact">
                             <div className="basket">
