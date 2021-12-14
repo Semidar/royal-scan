@@ -5,8 +5,8 @@ const Basket = ({ onCloseBasket, items = []}) => {
     
     return (
         <div>
-           <div className='basket__overlay'>
-                <div className='basket__modal'> 
+           <div onClick={onCloseBasket} className='basket__overlay'>
+                <div onClick={ e => e.stopPropagation() } className='basket__modal'> 
                     <div className='title'>
                        <h2>Корзина:</h2>
                        <button onClick={onCloseBasket} className='close__btn'>Закрыть</button>

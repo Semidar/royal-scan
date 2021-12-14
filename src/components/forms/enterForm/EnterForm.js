@@ -1,11 +1,11 @@
 import React from 'react'
 import './enterForm.scss'
 
-const EnterForm = ({ onEntreFormClose }) => {
+const EnterForm = ({ active, onEntreFormClose }) => {
     return (
         <>
-        <div className='form__overlay'>
-            <form className="login__form">
+        <div onClick={onEntreFormClose} className={active ? 'form__overlay active' : 'form__overlay'}>
+            <form onClick={e => e.stopPropagation()} className="login__form">
                 <div className='inp__template'>
                     <input type="text" placeholder="Имя" />
                     <input type="password" placeholder="Пароль" />
