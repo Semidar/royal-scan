@@ -154,11 +154,6 @@
         .menu__wrap {
           padding: 0 50px;
         }
-        .nav {
-          li {
-            padding: 10px 10px;
-          }
-        }
         .contact {
           .basket {
             .fas {
@@ -177,11 +172,6 @@
         font-size: 14px;
         .menu__wrap {
           padding: 0;
-        }
-        .nav {
-          li {
-            padding: 5px 5px;
-          }
         }
         .contact {
           .basket {
@@ -206,10 +196,9 @@
           padding: 25px 0;
         }
         .nav {
-          justify-content: center;
+          justify-content: space-between;
           li {
             margin: 0;
-            padding: 5px 5px;
           }
         }
         .contact {
