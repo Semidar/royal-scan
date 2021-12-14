@@ -2,10 +2,9 @@ import React from 'react';
 import './shop.scss';
 import Card from './card/Card'
 
-const Shop = () => {
+const Shop = ({setBasketItems}) => {
 
     const [items, setItems] = React.useState([]);
-    // const [cardItems, setCardItems] = React.useState([]);
 
     React.useEffect(() => {
             fetch('https://61b78a6a64e4a10017d18b94.mockapi.io/products').then(res => {
@@ -14,6 +13,11 @@ const Shop = () => {
             setItems(json);
         });
     },[]);
+
+    const onAddToCard = (product) => {
+        console.log(product)
+        setBasketItems(prev => [...prev, product]);
+    }
     
     return (
         <>
@@ -28,6 +32,7 @@ const Shop = () => {
                                 name={obj.itemName} 
                                 price={obj.price} 
                                 img={obj.imageUrl}
+                                addProduct={onAddToCard}
                             />))}  
                     </div>
                 </div>

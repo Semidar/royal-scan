@@ -7,11 +7,12 @@ import Service  from './service/Service';
 import './main.scss';
 
 
-const Main = () => {
+const Main = ({setBasketItems}) => {
+    
     return (
         <div>
             <Routes>
-                <Route path='/' element={<Shop/>}/>
+                <Route path='/' element={<Shop setBasketItems = { setBasketItems }/>}/>
                 <Route path='/About' element={<About/>}/>
                 <Route path='/Delivery' element={<Delivery/>}/>
                 <Route path='/Service' element={<Service/>}/>

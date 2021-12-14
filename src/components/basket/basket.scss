@@ -6,7 +6,17 @@
   width: 100%;
   height: 100%;
   z-index: 1;
+  button {
+    background-color: transparent;
+    border: 1px solid #323941;
+    color: #323941;
+    border-radius: 5px;
+  }
+  button:hover {
+    cursor: pointer;
+  }
   .basket__modal {
+    overflow: auto;
     padding: 20px;
     position: fixed;
     width: 320px;
@@ -16,11 +26,14 @@
     display: flex;
     flex-direction: column;
     .title {
-      margin: 0;
+      margin: 0 0 20px 0;
       display: flex;
       justify-content: space-between;
       h2 {
         margin: 0;
+        font-size: 32px;
+        color: #009eff;
+        font-weight: 800;
       }
       .close__btn {
         margin: 0;
@@ -28,9 +41,72 @@
     }
     .items {
       flex: 1;
+      .basket__item {
+        margin-bottom: 10px;
+        padding: 0 10px;
+        border: 2px solid #323941;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        img {
+          width: 100px;
+        }
+        .item__template {
+          display: flex;
+          button {
+            height: 20px;
+          }
+          .item__info {
+            .name {
+              color: #323941;
+            }
+            .price {
+              color: #323941;
+            }
+          }
+        }
+      }
     }
     .basket__panel {
-      margin-bottom: 50px;
+      margin: 50px 0;
+      .total__price {
+        display: flex;
+        justify-content: space-between;
+        .price__name {
+          margin: 0;
+          color: #009eff;
+          font-size: 22px;
+          font-weight: 800;
+        }
+        .price {
+          margin: 0;
+          padding-bottom: 20px;
+          color: #323941;
+          font-size: 22px;
+          font-weight: 800;
+        }
+      }
+      button {
+        display: block;
+        width: 180px;
+        height: 45px;
+        margin: 10px auto;
+        padding: 10px 0;
+        font-size: 16px;
+        background-color: #009eff;
+        border: none;
+        border-radius: 5px;
+        color: #fff;
+        transition: all 0.1s;
+      }
+      button:hover {
+        cursor: pointer;
+      }
+      button:active {
+        border: 2px solid #009eff;
+        color: #009eff;
+        background-color: transparent;
+      }
     }
   }
 }

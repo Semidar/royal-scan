@@ -1,18 +1,18 @@
 import React from 'react'
 import './card.scss'
 
-const addBasket = () => {
-    
-}
+const Card = ({ img, name, price, addProduct }) => {
 
-const Card = (props) => {
+    const addBasket = () => {
+        addProduct({ img, name, price });
+    }
 
     return (
         <>
         <div className='product__card'>
-            <img src={props.img} alt='img'></img>
-            <div className='name'>{props.name}</div>
-            <div className='price'><h3>{props.price} грн.</h3></div>
+            <img src={img} alt='img'></img>
+            <div className='name'>{name}</div>
+            <div className='price'><h3>{price} грн.</h3></div>
             <button className='basket' onClick={addBasket}>Добавить в корзину</button>
             
         </div>

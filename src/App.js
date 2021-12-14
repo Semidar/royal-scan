@@ -7,13 +7,14 @@ import Basket from './components/basket/Basket';
 
 function App() {
   const [basketOpen, setBasketOpen] = React.useState(false);
-
+  const [basketItems, setBasketItems] = React.useState([]);
+  
   return (
     <div className="App">
       {/* <Forms/> */}
-      {basketOpen && <Basket onCloseBasket={()=>setBasketOpen(false)}/>}
+      {basketOpen && <Basket items = { basketItems } onCloseBasket={()=>setBasketOpen(false)}/>}
       <Header onOpenBasket={()=>setBasketOpen(true)}/>
-      <Main/>
+      <Main setBasketItems = { setBasketItems }/>
       <Footer/>
     </div>
   );
