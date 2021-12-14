@@ -15,7 +15,6 @@ const Shop = ({setBasketItems}) => {
     },[]);
 
     const onAddToCard = (product) => {
-        console.log(product)
         setBasketItems(prev => [...prev, product]);
     }
     

@@ -48,13 +48,17 @@
           border-radius: 50px;
           transition: all 0.5s;
           .fas {
-            font-size: 32px;
+            font-size: 40px;
             margin-right: -20px;
           }
           .basket__count {
             background-color: orangered;
             border-radius: 50px;
-            padding: 0 5px;
+            width: 27px;
+            height: 27px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
           }
         }
         .basket:hover {
@@ -94,8 +98,10 @@
         .icon {
           margin: 0 15px 0 0;
           .far {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             font-size: 50px;
-            margin-bottom: 10px;
             color: #5b6168;
           }
         }

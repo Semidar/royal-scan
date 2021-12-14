@@ -12,11 +12,17 @@ function App() {
   
   return (
     <div className="App">
+      
       {enterFormOpen && <EnterForm onEntreFormClose = {()=>setEnterFormOpen(false)}/>}
+      
       {basketOpen && <Basket items = { basketItems } onCloseBasket={()=>setBasketOpen(false)}/>}
+      
       <Header onOpenBasket={()=>setBasketOpen(true)}  
-              onEntreFormOpen = {()=>setEnterFormOpen(true)}/>
+              onEntreFormOpen = {()=>setEnterFormOpen(true)}
+              items = { basketItems }/>  
+      
       <Main setBasketItems = { setBasketItems }/>
+      
       <Footer/>
     </div>
   );

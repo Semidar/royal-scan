@@ -8,8 +8,7 @@ import { NavLink } from "react-router-dom"
 
 import './header.scss';
 
-const Header = ({ onOpenBasket, onEntreFormOpen }) => {
-    
+const Header = ({ onOpenBasket, onEntreFormOpen, items }) => {
     return (
         <>
         <div className='header'>
@@ -27,7 +26,7 @@ const Header = ({ onOpenBasket, onEntreFormOpen }) => {
                                 <div className="fas fa-shopping-basket">
                                     <FontAwesomeIcon icon={faShoppingBasket} /> 
                                 </div>
-                                <div className="basket__count">0</div>
+                                <div className="basket__count">{items.length}</div>
                             </div>
                             <div className="contact__frame">
                                 <div className="phone">
