@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom"
 
 import './header.scss';
 
-const Header = (props) => {
+const Header = ({ onOpenBasket, onEntreFormOpen }) => {
     
     return (
         <>
@@ -23,7 +23,7 @@ const Header = (props) => {
                             <li className="service"><NavLink to='/Service'>Гарантия и сервис</NavLink></li>
                         </ul>
                         <div className="contact">
-                            <div onClick={props.onOpenBasket} className="basket">
+                            <div onClick={onOpenBasket} className="basket">
                                 <div className="fas fa-shopping-basket">
                                     <FontAwesomeIcon icon={faShoppingBasket} /> 
                                 </div>
@@ -50,7 +50,7 @@ const Header = (props) => {
                             </div>
                         </div>
                         <div className="client__panel">
-                            <input id="LogInBtn" type="button" className="login" value="Войти"/>
+                            <input onClick={onEntreFormOpen} id="LogInBtn" type="button" className="login" value="Войти"/>
                             <input id="RegBtn" type="button" className="register" value="Регистрация"/>
                         </div>
                     </div>

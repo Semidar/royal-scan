@@ -1,0 +1,25 @@
+.form__overlay {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  .login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0;
+    width: 300px;
+    height: 250px;
+    margin-top: 200px;
+    background: #fff;
+    border-radius: 5px;
+  }
+  .close__btn {
+    border: 1px solid #323941;
+    background-color: transparent;
+    color: #323941;
+    padding: 10px;
+    width: 100px;
+  }
+}
