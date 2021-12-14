@@ -1,21 +1,30 @@
 .shop {
+  margin: 50px 0;
   .shop__wrap {
     max-width: 1940px;
     padding: 0 170px;
     display: flex;
     justify-content: space-between;
     .filters {
+      font-size: 32px;
+      color: #009eff;
+      font-weight: 800;
+      padding: 20px;
       width: 300px;
       margin: 0;
-      border: 2px solid green;
+      border: 2px solid #323941;
+      border-radius: 5px;
     }
     .gallery {
+      padding: 20px;
       width: 1000px;
-      padding: 50px;
       margin: 0;
-      border: 2px solid yellow;
       .title {
         margin-bottom: 20px;
+        font-size: 32px;
+        margin-bottom: 20px;
+        font-weight: 800;
+        color: #009eff;
       }
       .product__template {
         display: flex;

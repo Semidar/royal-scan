@@ -2,7 +2,7 @@ import React from 'react'
 import './card.scss'
 
 const addBasket = () => {
-    alert('work');
+    
 }
 
 const Card = (props) => {
@@ -10,12 +10,11 @@ const Card = (props) => {
     return (
         <>
         <div className='product__card'>
-            <div className='img'>{props.img}</div>
+            <img src={props.img} alt='img'></img>
             <div className='name'>{props.name}</div>
-            <div className='price'>{props.price}</div>
-            <div className='panel'>
-                <button className='basket' onClick={addBasket}>Basket</button>
-            </div>
+            <div className='price'><h3>{props.price} грн.</h3></div>
+            <button className='basket' onClick={addBasket}>Добавить в корзину</button>
+            
         </div>
         </>
     )
