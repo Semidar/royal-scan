@@ -6,12 +6,13 @@
     display: flex;
     justify-content: space-between;
     .filters {
+      margin: 0;
+      margin-right: 50px;
       font-size: 32px;
       color: #009eff;
       font-weight: 800;
       padding: 20px;
       width: 300px;
-      margin: 0;
       border: 2px solid #323941;
       border-radius: 5px;
     }
