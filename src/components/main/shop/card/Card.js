@@ -4,7 +4,7 @@ import './card.scss'
 const Card = ({ img, name, price, addProduct }) => {
 
     const addBasket = () => {
-        addProduct({ img, name, price });
+        addProduct({ img, name, price});
     }
 
     return (

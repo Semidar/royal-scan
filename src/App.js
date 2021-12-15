@@ -18,7 +18,9 @@ function App() {
       {enterFormOpen && <EnterForm onEntreFormClose = {()=>setEnterFormOpen(false)}/>}
       {regFormOpen && <RegisterForm onRegFormClose = {()=>setRegFormOpen(false)}/>}
       
-      {basketOpen && <Basket items = { basketItems } onCloseBasket={()=>setBasketOpen(false)}/>}
+      {basketOpen && <Basket items = { basketItems } 
+                             onCloseBasket={()=>setBasketOpen(false)}
+                             setBasketItems={setBasketItems}/>}
       
       <Header onOpenBasket={()=>setBasketOpen(true)}  
               onEntreFormOpen = {()=>setEnterFormOpen(true)}
