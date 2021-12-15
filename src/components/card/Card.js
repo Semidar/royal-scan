@@ -1,10 +1,10 @@
 import React from 'react'
 import './card.scss'
 
-const Card = ({ img, name, price, addProduct }) => {
+const Card = ({ img, name, price, addProduct}) => {
 
     const addBasket = () => {
-        addProduct({ img, name, price});
+        addProduct({ img, name, price })
     }
 
     return (
@@ -13,7 +13,7 @@ const Card = ({ img, name, price, addProduct }) => {
             <img src={img} alt='img'></img>
             <div className='name'>{name}</div>
             <div className='price'><h3>{price} грн.</h3></div>
-            <button className='basket' onClick={addBasket}>Добавить в корзину</button>
+            <button onClick={addBasket} className='basket' >Добавить в корзину</button>
             
         </div>
         </>

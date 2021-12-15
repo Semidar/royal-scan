@@ -1,4 +1,5 @@
 .form__overlay {
+  display: none;
   position: fixed;
   background: rgba(0, 0, 0, 0.5);
   width: 100%;
@@ -9,6 +10,7 @@
   justify-content: center;
 
   form {
+    display: none;
     margin: 0;
     display: flex;
     flex-direction: column;

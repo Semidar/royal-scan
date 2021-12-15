@@ -8,9 +8,8 @@ import { NavLink } from "react-router-dom"
 
 import './header.scss';
 
-const Header = ({ onOpenBasket, onEntreFormOpen, onRegFormOpen, items }) => {
+const Header = ({ onOpenBasket, onLogOpen, onRegOpen, counter }) => {
     const [burgerActive, setBurger] = React.useState(false);
-    // const [porductListActive, setProduct] = React.useState(false);
     return (
         <>
         <div className='header'>
@@ -24,11 +23,11 @@ const Header = ({ onOpenBasket, onEntreFormOpen, onRegFormOpen, items }) => {
                             <li className="service"><NavLink to='/Service'>Гарантия и сервис</NavLink></li>
                         </ul>
                         <div className="contact">
-                            <div onClick={onOpenBasket} className="basket">
-                                <div className="fas fa-shopping-basket">
+                            <div className="basket">
+                                <div onClick={onOpenBasket} className="fas fa-shopping-basket">
                                     <FontAwesomeIcon icon={faShoppingBasket} /> 
                                 </div>
-                                <div className="basket__count">{items.length}</div>
+                                <div className="basket__count">{counter.length}</div>
                             </div>
                             <div className="contact__frame">
                                 <div className="phone">
@@ -51,8 +50,8 @@ const Header = ({ onOpenBasket, onEntreFormOpen, onRegFormOpen, items }) => {
                             </div>
                         </div>
                         <div className="client__panel">
-                            <input onClick={onEntreFormOpen} id="LogInBtn" type="button" className="login" value="Войти"/>
-                            <input onClick={onRegFormOpen} id="RegBtn" type="button" className="register" value="Регистрация"/>
+                            <input onClick={onLogOpen} id="LogInBtn" type="button" className="login" value="Войти"/>
+                            <input onClick={onRegOpen} id="RegBtn" type="button" className="register" value="Регистрация"/>
                         </div>
                     </div>
                 </div>

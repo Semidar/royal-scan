@@ -1,10 +1,10 @@
 import React from 'react'
 import '../forms.scss'
 
-const EnterForm = ({ onEntreFormClose }) => {
+const EnterForm = ({onLogClose}) => {
     return (
         <>
-        <div onClick={onEntreFormClose} className='form__overlay'>
+        <div onClick={onLogClose} className='form__overlay'>
             <form onClick={e => e.stopPropagation()} className="login__form">
                 <div className='inp__template'>
                     <input type="text" placeholder="Имя" />
@@ -12,7 +12,7 @@ const EnterForm = ({ onEntreFormClose }) => {
                 </div>
                 <div className='btn__template'>
                     <button>Вход</button>
-                    <button onClick={onEntreFormClose} className='close__btn'>Закрыть</button>
+                    <button onClick={onLogClose} className='close__btn'>Закрыть</button>
                 </div>
             </form>
         </div>
