@@ -10,7 +10,7 @@ function App() {
   const [basketOpen, setBasketOpen] = React.useState(false);
   const [basketItems, setBasketItems] = React.useState([]);
   const [enterFormOpen, setEnterFormOpen] = React.useState(false);
-  const [regFormOpen, setRegFormOpen] = React.useState(true);
+  const [regFormOpen, setRegFormOpen] = React.useState(false);
   
   return (
     <div className="App">

@@ -1,7 +1,7 @@
 .header {
   .header__wrap {
     .menu {
-      background-color: #323941;
+      background-color: #333d45;
       font-size: 18px;
       .menu__wrap {
         max-width: 1940px;
@@ -109,7 +109,7 @@
           input {
             font-size: 12px;
             margin-bottom: 10px;
-            color: #323941;
+            color: #333d45;
             background-color: transparent;
             border: 1px solid #acafb3;
             display: block;
@@ -118,12 +118,12 @@
             border-radius: 2px;
           }
           input:hover {
-            background-color: #323941;
+            background-color: #333d45;
             color: #fff;
             cursor: pointer;
           }
           input:active {
-            color: #323941;
+            color: #333d45;
             background-color: transparent;
             border: 1px solid #acafb3;
           }
@@ -131,7 +131,7 @@
       }
     }
     .shop__navigation {
-      background-color: #323941;
+      background-color: #333d45;
       .burger {
         display: none;
       }

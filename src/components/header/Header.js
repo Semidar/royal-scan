@@ -9,6 +9,8 @@ import { NavLink } from "react-router-dom"
 import './header.scss';
 
 const Header = ({ onOpenBasket, onEntreFormOpen, onRegFormOpen, items }) => {
+    const [burgerActive, setBurger] = React.useState(false);
+    // const [porductListActive, setProduct] = React.useState(false);
     return (
         <>
         <div className='header'>
@@ -56,7 +58,7 @@ const Header = ({ onOpenBasket, onEntreFormOpen, onRegFormOpen, items }) => {
                 </div>
                 <div className="shop__navigation">
                     <SimpleSlider/>
-                    <div className="burger">
+                    <div onClick={()=>setBurger(!burgerActive)} className={ burgerActive ? "burger active" : "burger"}>
                         <div className="first__frame">
                         <div className="square"></div>
                         <div className="square"></div>
@@ -66,7 +68,7 @@ const Header = ({ onOpenBasket, onEntreFormOpen, onRegFormOpen, items }) => {
                         <div className="square"></div>
                         </div>
                     </div>
-                    <div className="product__list">
+                    <div className={ burgerActive ? "product__list active" : "product__list"}>
                         <div className="product">
                         <p>Сканеры штрих кода</p>
                         </div>

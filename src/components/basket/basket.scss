@@ -31,9 +31,9 @@
       }
       .close__btn {
         margin: 0;
-        border: 1px solid #323941;
+        border: 1px solid #333d45;
         background-color: transparent;
-        color: #323941;
+        color: #333d45;
         padding: 10px;
         width: 100px;
       }
@@ -43,7 +43,7 @@
       .basket__item {
         margin-bottom: 10px;
         padding: 0 10px;
-        border: 2px solid #323941;
+        border: 2px solid #333d45;
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -59,16 +59,16 @@
             font-size: 10px;
             margin: 0;
             padding: 0;
-            border: 1px solid #323941;
+            border: 1px solid #333d45;
             background-color: transparent;
-            color: #323941;
+            color: #333d45;
           }
           .item__info {
             .name {
-              color: #323941;
+              color: #333d45;
             }
             .price {
-              color: #323941;
+              color: #333d45;
             }
           }
         }
@@ -88,7 +88,7 @@
         .price {
           margin: 0;
           padding-bottom: 20px;
-          color: #323941;
+          color: #333d45;
           font-size: 22px;
           font-weight: 800;
         }
