@@ -68,7 +68,7 @@ const Header = ({ onOpenBasket, onEntreFormOpen, onRegFormOpen, items }) => {
                         <div className="square"></div>
                         </div>
                     </div>
-                    <div className={ burgerActive ? "product__list active" : "product__list"}>
+                    <div onClick={()=>setBurger(!burgerActive)} className={ burgerActive ? "product__list active" : "product__list"}>
                         <div className="product">
                         <p>Сканеры штрих кода</p>
                         </div>
